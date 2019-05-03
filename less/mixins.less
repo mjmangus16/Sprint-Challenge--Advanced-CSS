@@ -1,1 +1,25 @@
 // Mixins Here
+
+.flexProperties(@justify, @direction) {
+  display: flex;
+  justify-content: @justify;
+  align-items: center;
+  flex-direction: @direction;
+}
+
+.signupBtn(@width, @height, @bg-color, @radius, @font) {
+  width: @width;
+  height: @height;
+  background-color: @bg-color;
+  border-radius: @radius;
+  font-size: @font;
+  color: @porcelain;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @porcelain;
+    color: @bg-color;
+    border: 1px solid @bg-color;
+    box-shadow: 2px 2px 5px;
+  }
+}
