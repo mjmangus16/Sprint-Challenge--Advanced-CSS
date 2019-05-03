@@ -1,17 +1,15 @@
 // Home Content
 
 .home {
-
+  margin-top: 100px;
   .intro {
-
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
   }
 
   .space-images {
@@ -58,13 +56,15 @@
       }
 
       .btn {
+        .signupBtn(10rem, 4rem, @btn-bg-color, 5px, 2rem);
+        .flexProperties(space-around, row);
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
@@ -72,4 +72,4 @@
       }
     }
   }
-}// home
+} // home
