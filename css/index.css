@@ -135,7 +135,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  color: #5e6164;
 }
 h1,
 h2,
@@ -143,7 +143,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  color: #23293b;
 }
 h2 {
   font-size: 3.2rem;
@@ -162,15 +162,15 @@ p {
 }
 .navigation {
   width: 100%;
-  color: #454A59;
+  color: #454a59;
   text-align: center;
   position: fixed;
   top: 0;
   left: 0;
 }
 .navigation .nav-bg {
-  background-color: #F6F6F6;
-  border-bottom: 1px solid #F1F1F1;
+  background-color: #f6f6f6;
+  border-bottom: 1px solid #f1f1f1;
   position: absolute;
   height: 100px;
   width: 100%;
@@ -225,6 +225,21 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .launch {
+    display: none;
+  }
+}
 .home .visit-planets {
   padding: 15px;
 }
@@ -241,8 +256,25 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    border-top: none;
+    margin-top: 20px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+    order: 2;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -253,10 +285,10 @@ footer {
 .home .walk .walk-text .btn {
   width: 10rem;
   height: 4rem;
-  background-color: #22283A;
+  background-color: #22283a;
   border-radius: 5px;
   font-size: 2rem;
-  color: #F6F7F8;
+  color: #f6f7f8;
   cursor: pointer;
   display: flex;
   justify-content: space-around;
@@ -264,14 +296,27 @@ footer {
   flex-direction: row;
 }
 .home .walk .walk-text .btn:hover {
-  background-color: #F6F7F8;
-  color: #22283A;
-  border: 1px solid #22283A;
+  background-color: #f6f7f8;
+  color: #22283a;
+  border: 1px solid #22283a;
   box-shadow: 2px 2px 5px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    order: 1;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 5%;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
